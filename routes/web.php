@@ -40,3 +40,20 @@ Route::get('/Biodata Dosen', function () {
     ]
 );
 });
+
+Route::get('/Dosen/{nama}', 'DosenController@index');
+
+Route::get('/Perpustakaan', function() {
+    return view('dataperpus',
+    [
+        'npmpeminjam' => '0101010101',
+        'namapeminjam' => 'Arief Maulana',
+        'noseribuku' => '4828',
+        'judulbuku' => 'Sirah Nabawiyah',
+        'tglpeminjaman' => '01092020',
+        'tglkembali' => '31092020',
+        'denda' => 'Rp. 250.000'
+    ]
+
+    );
+});
