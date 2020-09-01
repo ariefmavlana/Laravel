@@ -57,3 +57,15 @@ Route::get('/Perpustakaan', function() {
 
     );
 });
+
+Route::get('/Tata Usaha', function() {
+    return view('datatu',
+    [
+        'idpetugas' => '123456789',
+        'namapetugas' => 'Asep Beling',
+        'alamat' => 'Jl. Calipornia tea gening',
+        'bagian' => 'Service Computer'
+    ]  
+    
+    );
+});
