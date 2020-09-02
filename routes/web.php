@@ -41,7 +41,6 @@ Route::get('/Biodata Dosen', function () {
 );
 });
 
-Route::get('/Dosen/{nama}', 'DosenController@index');
 
 Route::get('/Perpustakaan', function() {
     return view('dataperpus',
@@ -69,3 +68,9 @@ Route::get('/Tata Usaha', function() {
     
     );
 });
+
+Route::get('/Dosen/{nama}', 'DosenController@index');
+
+Route::get('/formulir', 'DosenController@formulir');
+Route::post('/formulir/proses', 'DosenController@proses');
+
