@@ -74,3 +74,11 @@ Route::get('/Dosen/{nama}', 'DosenController@index');
 Route::get('/formulir', 'DosenController@formulir');
 Route::post('/formulir/proses', 'DosenController@proses');
 
+Route::get('/', function () {
+    return view('WELCOME');
+});
+
+//route blog
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
