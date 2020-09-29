@@ -17,7 +17,7 @@
         <tr>
             <th>NAMA</th>
             <th>JABATAN</th>
-            <th>USIA</th>
+            <th>UMUR</th>
             <th>ALAMAT</th>
             <th>OPSI</th>
         </tr>
@@ -25,7 +25,7 @@
         <tr>
             <td>{{ $p->pegawai_nama }}</td>
             <td>{{ $p->pegawai_jabatan }}</td>
-            <td>{{ $p->pegawai_usia }}</td>
+            <td>{{ $p->pegawai_umur }}</td>
             <td>{{ $p->pegawai_alamat }}</td>
             <td>
                 <a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
